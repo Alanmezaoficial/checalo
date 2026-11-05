@@ -4,6 +4,10 @@ Entiende los riesgos antes de publicar. Dos ediciones con el mismo nombre comerc
 
 Adaptación y documentación de Alanmeza.ai sobre el proyecto original. Consulta [autoría](ATTRIBUTION.md), [licencia](LICENSE) y [aviso original](NOTICE).
 
+## Instalación fácil
+
+Elige tu edición en las guías siguientes. Cada una empieza con tres caminos: un prompt con enlaces públicos, un ZIP acompañado de su prompt y los comandos manuales. Conservan toda la herramienta. Los ZIP de las ediciones incluyen INSTALAR.md; la edición Claude añade un catálogo local para instalar el plugin completo.
+
 ## Elige tu edición
 
 - [Guía Codex](docs/guia-codex.md): parte de la adaptación instalada y conserva Windows, AGENTS.md y las herramientas disponibles.
@@ -37,7 +41,7 @@ Para Codex, sigue la [guía de instalación](docs/guia-codex.md) y copia la carp
 
 ## Versiones
 
-Versión derivada: **1.0.0**. La revisión original se identifica por commit en `upstream.lock.json`; ese número no pretende ser la versión del creador.
+Versión derivada: **1.0.1**. La revisión original se identifica por commit en `upstream.lock.json`; ese número no pretende ser la versión del creador.
 
 ## Desarrollo y pruebas
 

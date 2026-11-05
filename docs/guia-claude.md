@@ -6,6 +6,58 @@ title: 'Chécalo · Edición Claude'
 
 Entiende los riesgos antes de publicar. Esta guía te acompaña desde la preparación hasta el resultado y señala qué necesita comprobarse en tu entorno.
 
+## Empieza por aquí: tres formas de instalar
+
+Elige solo una opción. La instalación conserva la herramienta completa con sus referencias y scripts. Esta edición principal es para Claude Code; la variante Cowork de Súbelo se explica más abajo.
+
+### 1. Copia un prompt con los enlaces · recomendado
+
+Copia el bloque completo, pégalo en un chat nuevo de Claude Code y deja que prepare la instalación. La guía enlazada es pública en GitHub: no necesita iniciar sesión en el Bunker.
+
+```text
+Instala para mi usuario la edición Claude Code de Chécalo como plugin completo.
+
+Guía pública: https://github.com/Alanmezaoficial/checalo/blob/main/docs/guia-claude.md
+Repositorio: https://github.com/Alanmezaoficial/checalo
+
+Lee la guía. Si estás en Claude Code con acceso a mi equipo, registra el catálogo Alanmezaoficial/checalo e instala checalo@alanmeza-checalo con los comandos admitidos por mi versión. Conserva la carpeta completa, sus scripts, referencias, plantillas, LICENSE y NOTICE. No sustituyas la herramienta por un resumen ni cambies su contenido. Si ya está instalada con ese nombre, detente y dime qué versión encontraste antes de reemplazarla.
+
+Conserva también los comandos, agentes y el manifiesto del plugin. Verifica la instalación con la lista de plugins e indica cómo comprobar su activación en una sesión nueva. No ejecutes la skill todavía. Si estás en una conversación sin acceso al equipo o el host no admite este plugin, explica qué necesito sin simular una instalación.
+```
+
+### 2. Descarga el ZIP y acompáñalo con este prompt
+
+En la ficha de esta edición, pulsa Descargar ZIP. Adjunta el archivo a un chat de Claude Code o indica su ruta local si el host no admite ese adjunto; después pega el bloque. Descargar o adjuntar el archivo sin pedir la instalación no lo instala. Cada ZIP incluye INSTALAR.md con estas instrucciones.
+
+```text
+Instala para mi usuario la edición Claude Code de Chécalo del ZIP adjunto checalo-claude-1.0.1.zip, como plugin completo.
+
+Guía pública de apoyo: https://github.com/Alanmezaoficial/checalo/blob/main/docs/guia-claude.md
+
+Localiza el ZIP o pide su ruta local si no puedes acceder al adjunto. Extrae de forma segura la carpeta checalo en una ubicación persistente y lee INSTALAR.md. Esta carpeta incluye .claude-plugin/plugin.json y su catálogo local .claude-plugin/marketplace.json, cuyo source es ./; registra ese catálogo local e instala checalo@alanmeza-checalo. Conserva la carpeta completa, sus scripts, referencias, plantillas, LICENSE y NOTICE. No sustituyas la herramienta por un resumen ni cambies su contenido. Si ya está instalada con ese nombre, detente y dime qué versión encontraste antes de reemplazarla.
+
+Conserva comandos, agentes y recursos del plugin. Valida y consulta la lista de plugins, informa de la ruta y de la comprobación pendiente en una sesión nueva. No ejecutes la skill todavía. Si el host no es compatible o no tiene acceso al equipo, indícalo sin afirmar que quedó instalada.
+```
+
+<details>
+<summary>3. Prefiero instalar manualmente · Terminal · Claude Code</summary>
+
+Con Claude Code instalado y autenticado, abre una terminal y pega estas tres líneas. El catálogo obtiene el plugin completo desde GitHub. No necesita pedirle trabajo a una IA.
+
+```text
+claude plugin marketplace add Alanmezaoficial/checalo
+claude plugin install checalo@alanmeza-checalo
+claude plugin list
+```
+
+</details>
+
+### Confirma que quedó disponible
+
+Consulta claude plugin list y abre una sesión nueva de Claude Code para comprobar los comandos del plugin. Si la carpeta existe pero no aparece en el selector, informa de ambas cosas; no son la misma prueba.
+
+Las secciones siguientes explican requisitos y alternativas con más detalle.
+
 ## Antes de instalar
 
 La edición principal necesita **Claude Code**, no solo una conversación en claude.ai. Debes tenerlo instalado, autenticado y con acceso a la carpeta del proyecto. Las herramientas del proyecto y las CLIs de alojamiento se obtienen aparte cuando hagan falta. No hay credenciales ni cuentas incluidas.
@@ -42,7 +94,7 @@ claude plugin install checalo@alanmeza-checalo
 claude plugin list
 ```
 
-Los comandos de catálogo cambian la configuración local de Claude; ejecútalos cuando quieras instalar. No utilizan un repositorio público. Si descargaste solo el ZIP Claude, descomprímelo y usa `claude --plugin-dir` con su carpeta superior: el catálogo está en el repositorio completo.
+Los comandos de catálogo cambian la configuración local de Claude; ejecútalos cuando quieras instalar. No utilizan un repositorio público. Si descargaste solo el ZIP Claude, descomprímelo y usa `claude --plugin-dir` con su carpeta superior: el ZIP ahora incluye también su propio catálogo local. Después de guardarlo en una ubicación persistente, puedes registrar esa carpeta con `claude plugin marketplace add RUTA_A_LA_CARPETA` e instalar el plugin por su nombre.
 
 ## Comprueba qué se cargó
 

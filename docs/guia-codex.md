@@ -6,6 +6,73 @@ title: 'Chécalo · Edición Codex'
 
 Entiende los riesgos antes de publicar. Esta guía te acompaña desde la preparación hasta el resultado y señala qué necesita comprobarse en tu entorno.
 
+## Empieza por aquí: tres formas de instalar
+
+Elige solo una opción. La instalación conserva la herramienta completa con sus referencias y scripts. Usa Codex en un entorno con acceso a archivos.
+
+### 1. Copia un prompt con los enlaces · recomendado
+
+Copia el bloque completo, pégalo en un chat nuevo de Codex y deja que prepare la instalación. La guía enlazada es pública en GitHub: no necesita iniciar sesión en el Bunker.
+
+```text
+Instala para mi usuario la edición Codex de Chécalo.
+
+Skill: https://github.com/Alanmezaoficial/checalo/tree/main/codex/skills/checalo
+Guía pública: https://github.com/Alanmezaoficial/checalo/blob/main/docs/guia-codex.md
+Repositorio: https://github.com/Alanmezaoficial/checalo
+
+Lee la guía y usa skill-installer si está disponible, indicando la ruta codex/skills/checalo y la carpeta personal de skills que detecta esta versión de Codex. Conserva la carpeta completa, sus scripts, referencias, plantillas, LICENSE y NOTICE. No sustituyas la herramienta por un resumen ni cambies su contenido. Si ya está instalada con ese nombre, detente y dime qué versión encontraste antes de reemplazarla.
+
+Comprueba que SKILL.md y todos sus recursos quedaron instalados. Indica la ruta final y cómo comprobar que aparece en el selector. No inicies un proyecto ni ejecutes la skill todavía. Si no tienes acceso a archivos o a GitHub, explica qué falta sin afirmar que la instalaste.
+```
+
+### 2. Descarga el ZIP y acompáñalo con este prompt
+
+En la ficha de esta edición, pulsa Descargar ZIP. Adjunta el archivo a un chat de Codex o indica su ruta local si el host no admite ese adjunto; después pega el bloque. Descargar o adjuntar el archivo sin pedir la instalación no lo instala. Cada ZIP incluye INSTALAR.md con estas instrucciones.
+
+```text
+Instala para mi usuario la edición Codex de Chécalo que adjunto en el ZIP checalo-codex-1.0.1.zip.
+
+Guía pública de apoyo: https://github.com/Alanmezaoficial/checalo/blob/main/docs/guia-codex.md
+
+Localiza el ZIP adjunto o su archivo local accesible, revisa su estructura y extrae de forma segura la carpeta checalo. Copia esa carpeta completa a la ubicación personal de skills que detecta mi Codex. Conserva la carpeta completa, sus scripts, referencias, plantillas, LICENSE y NOTICE. No sustituyas la herramienta por un resumen ni cambies su contenido. Si ya está instalada con ese nombre, detente y dime qué versión encontraste antes de reemplazarla.
+
+Comprueba SKILL.md y la integridad de los archivos copiados, indica la ruta final y cómo comprobar el selector. No ejecutes la skill todavía. Si el ZIP no es accesible desde este chat, pídeme su ruta local; no uses una descarga de la edición Claude.
+```
+
+<details>
+<summary>3. Prefiero instalar manualmente · Windows · PowerShell</summary>
+
+Descarga el ZIP de esta edición. En Windows, abre PowerShell y pega el bloque completo. Busca el archivo en Descargas; si lo guardaste en otra carpeta, cambia solo zipPath. No necesita pedirle trabajo a una IA.
+
+```powershell
+$zipPath = Join-Path $env:USERPROFILE 'Downloads\checalo-codex-1.0.1.zip'
+$skillsRoot = Join-Path $env:USERPROFILE '.agents\skills'
+$destination = Join-Path $skillsRoot 'checalo'
+if (!(Test-Path -LiteralPath $zipPath -PathType Leaf)) { throw 'No encuentro el ZIP en Descargas. Ajusta zipPath a su ubicación.' }
+if (Test-Path -LiteralPath $destination) { throw 'La skill ya existe. Revisa su versión antes de actualizar.' }
+$staging = Join-Path ([System.IO.Path]::GetTempPath()) ('manos-instalar-' + [guid]::NewGuid().ToString('N'))
+Expand-Archive -LiteralPath $zipPath -DestinationPath $staging
+$source = Join-Path $staging 'checalo'
+if (!(Test-Path -LiteralPath (Join-Path $source 'SKILL.md') -PathType Leaf)) { throw 'El ZIP no tiene la estructura esperada.' }
+New-Item -ItemType Directory -Path $skillsRoot -Force | Out-Null
+Copy-Item -LiteralPath $source -Destination $destination -Recurse
+foreach ($file in Get-ChildItem -LiteralPath $source -File -Recurse) {
+  $relative = $file.FullName.Substring($source.Length + 1)
+  $copy = Join-Path $destination $relative
+  if ((Get-FileHash -LiteralPath $file.FullName).Hash -ne (Get-FileHash -LiteralPath $copy).Hash) { throw ('Copia distinta: ' + $relative) }
+}
+Write-Output ('Archivos instalados y comprobados en: ' + $destination)
+```
+
+</details>
+
+### Confirma que quedó disponible
+
+Abre el selector de skills en una sesión nueva y busca Chécalo. Si no aparece, reinicia Codex. Si la carpeta existe pero no aparece en el selector, informa de ambas cosas; no son la misma prueba.
+
+Las secciones siguientes explican requisitos y alternativas con más detalle.
+
 ## Antes de instalar
 
 Necesitas Codex con acceso al sistema de archivos del equipo y una carpeta de trabajo. La biblioteca está en el apartado ChatGPT, pero este paquete está preparado para Codex: descargarlo desde un teléfono no lo instala en tu computadora ni lo habilita en todas las modalidades de ChatGPT.

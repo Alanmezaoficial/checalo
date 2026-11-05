@@ -1,0 +1,13 @@
+{
+  "name": "alanmeza-checalo",
+  "owner": {
+    "name": "Alanmeza.ai"
+  },
+  "plugins": [
+    {
+      "name": "checalo",
+      "source": "./",
+      "description": "Chécalo · Manos a la Obra"
+    }
+  ]
+}

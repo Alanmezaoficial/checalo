@@ -1,4 +1,13 @@
-# Validación de checalo · 1.0.0
+# Validación de checalo · 1.0.1
+
+## Instalación 1.0.1
+
+Se añadieron tres caminos de instalación, prompts por edición e INSTALAR.md dentro del ZIP. El ZIP Claude incluye un catálogo local con source ./ para registrar el plugin completo. El contenido existente de SKILL.md, scripts, referencias y plantillas se conservó por hashes.
+
+La instalación manual Codex en PowerShell se ejecutó con los dos caminos de entrada reubicados a carpetas temporales, comparando todos los archivos y rechazando sobrescritura. Se comprobaron extracción y resolución del catálogo Claude; Claude Code y Cowork no se ejecutaron. La web valida los textos que envía a Clipboard API y ofrece selección manual si el portapapeles no está disponible; una resolución de la API no certifica el pegado nativo en todos los navegadores.
+
+El registro 1.0.0 siguiente conserva la evidencia de scripts de trabajo, que no cambiaron.
+
 
 Fecha: 05/11/2026. Pruebas de este paquete: **8 casos aprobados**, dentro de 88 casos aprobados en Windows/Python 3.12.14. Las pruebas comprueban scripts y fixtures, no una conversación completa con un modelo.
 
