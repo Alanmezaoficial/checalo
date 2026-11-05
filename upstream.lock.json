@@ -1,0 +1,206 @@
+{
+  "editionVersion": "1.0.0",
+  "upstream": {
+    "repository": "https://github.com/Hainrixz/cyber-neo",
+    "commit": "535d0df7802ad2b8add28bde959cf954484a8449"
+  },
+  "installedBase": {
+    "name": "cyber-neo",
+    "files": [
+      {
+        "path": "assets/cyber-neo-hero.png",
+        "sha256": "56f34b4cb4b6622feee77dface8959eeac92a792759add26e43086d671f950e4"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "5806c7281d3cfd505f9ca0e8e111b4160238fcf16cdef45fca9412c96d7d6e78"
+      },
+      {
+        "path": "references/auth-authz-patterns.md",
+        "sha256": "efb2aa5fad614c3ae2990424965fc40b7882eabf442123d4cf6d2e5a90f48612"
+      },
+      {
+        "path": "references/cicd-security.md",
+        "sha256": "09dc1bb87d7b64a0a25103107239fc1c66cca6c0c1d79694bedcd11f70ccc4e6"
+      },
+      {
+        "path": "references/crypto-patterns.md",
+        "sha256": "de4e5f7818b3266e0e3f9130b6029d7655b728062e2b35f5ed425496ca1fc948"
+      },
+      {
+        "path": "references/cwe-top-25.md",
+        "sha256": "6fa818952e8df3ca2cbc914e08c63634719e919704c1290db991abcabdb8ec77"
+      },
+      {
+        "path": "references/error-handling-patterns.md",
+        "sha256": "40ce61e478963a87b2e7832ffebdd59a5eee29b50948a7fbd449016631464afe"
+      },
+      {
+        "path": "references/iac-docker.md",
+        "sha256": "b1eeee3b594dfcbbeb03c47a8c3998aebb5f048d7204b5dc72887476616fd790"
+      },
+      {
+        "path": "references/lang-javascript.md",
+        "sha256": "e93e8dc4b1ff88ae6d1519f762df3b09073b60e8ddfd7eb940c95cf0a6116508"
+      },
+      {
+        "path": "references/lang-python.md",
+        "sha256": "33407cb689161288cafa0d3e3dcd84ee6349e5961301e3ca46a804138a72a6cd"
+      },
+      {
+        "path": "references/logging-patterns.md",
+        "sha256": "eb607e489e1da9ddb68a13fbc1d545f6010c9f7378497c5c4cce31ab30ce175e"
+      },
+      {
+        "path": "references/owasp-top-10.md",
+        "sha256": "173efe47de948de3de5e49b2a696ea379a19c997dfe2c1fc21bef9c7aea07d26"
+      },
+      {
+        "path": "references/report-template.md",
+        "sha256": "3096fa456ab396629ee8e9a404f89a130cbbfc994f99bd28b16955f626bb4113"
+      },
+      {
+        "path": "references/secrets-patterns.md",
+        "sha256": "ba028fc39a54fd8db3de80dabe75aa893d312d6889f89c0618de50777e3ae5b7"
+      },
+      {
+        "path": "references/supply-chain.md",
+        "sha256": "125d38b255c55ebb36d19e6d4b2cf1904a2267b9a7ec3ce997b9469fe863cca2"
+      },
+      {
+        "path": "references/web-security-patterns.md",
+        "sha256": "34bb03d15f6e1ef6f9780012ddd1c73a06b2ef81ab92021ff916d1db4113abae"
+      },
+      {
+        "path": "scripts/check_lockfiles.py",
+        "sha256": "83ac41c70cb7867f49c625e3efd4742446a4aab0a84f52821c7be1a77dcecb15"
+      },
+      {
+        "path": "scripts/scan_secrets.py",
+        "sha256": "e54ae8181d152936b35bb191b176db17e8afab58a4a6f72f02cd3a9254d1c5e3"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "5c4e856fae0d61f9da0e1062f9616b72590c51c0adf188e7bd58568a7c1466dc"
+      }
+    ]
+  },
+  "upstreamFiles": [
+    {
+      "path": ".claude-plugin/plugin.json",
+      "sha256": "10e70cc9615a1abff8ea59cfe794e834b483ed4b83332cc4cff27a1626420f0e"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "40e95e2f0c43b2627a652b2fc93a96bc74a06f01a35e0434256320444b0640bf"
+    },
+    {
+      "path": "assets/claw-d-architecture.png",
+      "sha256": "181992cf76e72b0b3917b3383189798e93068039f2008d3ad59f346f8fe01b1c"
+    },
+    {
+      "path": "assets/claw-d-community.png",
+      "sha256": "7a9b383f622473c1534ae1c1f1d9a7b2c399a57ad60bfcc8176fe6b917ff850a"
+    },
+    {
+      "path": "assets/claw-d-scanner.png",
+      "sha256": "83b4ea6de7f76d8bf5559d48bee93f7aa1ff6adb8bbe60b5a08e04f076079cff"
+    },
+    {
+      "path": "assets/claw-d-shield.png",
+      "sha256": "cb99d1dfea252f5c263a13b49b780d0c9f97925f7e665eee03b475dea87d99d9"
+    },
+    {
+      "path": "assets/cyber-neo-hero.png",
+      "sha256": "56f34b4cb4b6622feee77dface8959eeac92a792759add26e43086d671f950e4"
+    },
+    {
+      "path": "assets/social-preview.png",
+      "sha256": "43adc7784e3f408bf9265c8a05b29e96c50c27ee680019a16775cf0da1d9df57"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "c949412341eb922d0b49b5ac869f30dce0351c3704bec7f35475cd1b548a0602"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "119619d2b8a06f4c120afe685b1c4a9529b8123803f0e35aceac26f164224a91"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "1955cdd11ffb46bca364711f973b24afe5239e682a43b191a1bd9256e8012196"
+    },
+    {
+      "path": "README.md",
+      "sha256": "bfd8ca1097d82a5c72c6dabe001d786682766c6568a8e86afdd91a918b1485d6"
+    },
+    {
+      "path": "skills/cyber-neo/references/auth-authz-patterns.md",
+      "sha256": "7db373ceb6a73b3a579e5270ce4e247babccff41a319ccd82be023bae0368a99"
+    },
+    {
+      "path": "skills/cyber-neo/references/cicd-security.md",
+      "sha256": "eb18d7edabdf77b63e41e465716dc74dc459c2419feac356e2ac5f647cc41a43"
+    },
+    {
+      "path": "skills/cyber-neo/references/crypto-patterns.md",
+      "sha256": "c996fb346d4a5fc958cb3c76c5c1df0d39cc9d50342e5f9a671569c77c852f7d"
+    },
+    {
+      "path": "skills/cyber-neo/references/cwe-top-25.md",
+      "sha256": "7976054f5dffff682e1dd2eed6346f12f5fc6cf00cfd2a7a7657d86e7f1350b3"
+    },
+    {
+      "path": "skills/cyber-neo/references/error-handling-patterns.md",
+      "sha256": "78e69acd4b416683e74c633e5aaee2a38f8b740c1b5fbe2337308bdbd37d39ac"
+    },
+    {
+      "path": "skills/cyber-neo/references/iac-docker.md",
+      "sha256": "456e6c3c8e52ac4f410987fad2c858d30ec7ec185a4117bc5239d2b02f31a550"
+    },
+    {
+      "path": "skills/cyber-neo/references/lang-javascript.md",
+      "sha256": "e12c8c6d246c1ddf6b05b0a47bf7887aa840956a00cca81fe840ea6a4be7f8ca"
+    },
+    {
+      "path": "skills/cyber-neo/references/lang-python.md",
+      "sha256": "780110f04fd50c49a1949b7067ca8d78d9c75c9f07b09eaba84355a758b24ad7"
+    },
+    {
+      "path": "skills/cyber-neo/references/logging-patterns.md",
+      "sha256": "32d0efbac7085e77db7017be445d31176bf7082be302acc6220c88814e88aca5"
+    },
+    {
+      "path": "skills/cyber-neo/references/owasp-top-10.md",
+      "sha256": "dc61e13a630d4223dbdb0379102b406dbff1bf31fcc2dee025f188652b369cdb"
+    },
+    {
+      "path": "skills/cyber-neo/references/report-template.md",
+      "sha256": "ebfbdd4a29c8d19caf67c6c22ddbe4124c69648bf3d59e20653da05d7ec03c4e"
+    },
+    {
+      "path": "skills/cyber-neo/references/secrets-patterns.md",
+      "sha256": "5d0e38bdd50de967fa6300244d9621f08632690949c01beab2d009e1877d0ea6"
+    },
+    {
+      "path": "skills/cyber-neo/references/supply-chain.md",
+      "sha256": "e546d2c9d2f297c773821ebd24aede53582b57ecf5e53da7f5a80dbb38f83b72"
+    },
+    {
+      "path": "skills/cyber-neo/references/web-security-patterns.md",
+      "sha256": "515a6c6c1157655bc4da6df886a396d77f63af98424e1d946cfb8b11dd5d1cf4"
+    },
+    {
+      "path": "skills/cyber-neo/scripts/check_lockfiles.py",
+      "sha256": "d92613412585c81b9e9bd3713c36ade0a6bdfdb7822fd06e9581825a179e33b0"
+    },
+    {
+      "path": "skills/cyber-neo/scripts/scan_secrets.py",
+      "sha256": "01169d57a4b7efe3a8fc138a1905198dff29a35dbf776a9cd05efe6e061e2bd7"
+    },
+    {
+      "path": "skills/cyber-neo/SKILL.md",
+      "sha256": "1e5702b71c20cb0effca190d105aa0448e244eca83169b033f1cc2b06a25a995"
+    }
+  ]
+}

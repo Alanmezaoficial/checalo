@@ -43,4 +43,3 @@ Versión derivada: **1.0.0**. La revisión original se identifica por commit en 
 
 Usa un entorno Python aislado e instala requirements-dev.txt; después ejecuta python -m pytest tests --import-mode=importlib. Estas dependencias son de validación, no del sitio ni del runtime de la skill. La ejecución del host conversacional se verifica aparte.
 
-

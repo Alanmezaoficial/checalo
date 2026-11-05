@@ -1,0 +1,10 @@
+{
+  "name": "checalo",
+  "version": "1.0.0",
+  "description": "Revisa un proyecto y ordena sus riesgos de seguridad.",
+  "author": {
+    "name": "Alanmeza.ai"
+  },
+  "license": "MIT",
+  "skills": "./skills/"
+}

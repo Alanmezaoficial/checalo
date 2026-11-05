@@ -1,0 +1,13 @@
+{
+  "name": "alanmeza-checalo",
+  "owner": {
+    "name": "Alanmeza.ai"
+  },
+  "plugins": [
+    {
+      "name": "checalo",
+      "source": "./claude",
+      "description": "Revisa un proyecto y ordena sus riesgos de seguridad."
+    }
+  ]
+}

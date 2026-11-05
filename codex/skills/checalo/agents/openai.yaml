@@ -1,0 +1,8 @@
+interface:
+  icon_large: "./assets/icon.svg"
+  display_name: "Chécalo"
+  short_description: "Auditoría defensiva local, priorizada y de solo lectura."
+  brand_color: "#00A86B"
+  default_prompt: "Usa $checalo para auditar defensivamente este proyecto sin modificarlo."
+policy:
+  allow_implicit_invocation: true
